@@ -146,6 +146,8 @@ main{
     margin-bottom: 5px;
 }
 
+
+
 /*Header & Footer*/
 header{
     display: flex;
@@ -183,7 +185,7 @@ nav a:hover{
     border-top: 4px #0065FC solid;
 }
 
-/*Search bar & filters*/
+/*Search bar, filters, infobar*/
 #search_bar {
     display: flex;
     flex-direction: row;
@@ -219,6 +221,56 @@ nav a:hover{
     font-weight: 700;
     font-size: 18px;
     color: black;
+}
+
+#filters{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    height: 50px;
+}
+
+#filters p{
+    font-weight: 900;
+    font-size: 1.063rem;
+}
+
+#filters > p {
+    font-size: 1.125rem;
+}
+
+.filter{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 4px 19px 4px 19px;
+    align-items: center;
+    border-radius: 25px;
+    border: 2px solid #F2F2F2;
+    box-sizing: border-box;
+    height: 100%;
+}
+.filter:hover{
+    cursor: pointer;
+    background-color: #DEEBFF;
+}
+
+#infobar{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+#infobar #icon_information {
+    box-sizing: border-box;
+    display: flex;
+    border: 1px solid #0065FC;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
