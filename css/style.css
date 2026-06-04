@@ -28,6 +28,7 @@ body {
     max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
+
 }
 
 a {
@@ -63,6 +64,25 @@ a {
     color: var(--main-bg-color)
 }
 
+#info_group{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+#headline h1{
+    font-size: 22px;
+}
+#headline p{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
@@ -161,6 +181,44 @@ nav a:hover{
     cursor: pointer;
     color:#0065FC;
     border-top: 4px #0065FC solid;
+}
+
+/*Search bar & filters*/
+#search_bar {
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+    height: 3.125rem;
+    border: 1px solid #F2F2F2;
+    width: fit-content;
+}
+
+#search_bar *{
+    border:none;
+    align-content: center;
+    text-align: center;
+}
+
+#search_bar #icon_search_pin{
+    background: #F2F2F2;
+    border-radius: 15px 0 0 15px;
+    width: 3.125rem;
+    color: black;
+}
+
+#search_bar button{
+    background: #0065FC;
+    border-radius: 0 15px 15px 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    padding: 15px 16px 15px 16px;
+}
+
+#search_bar input, #search_bar input::placeholder {
+    font-weight: 700;
+    font-size: 18px;
+    color: black;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
