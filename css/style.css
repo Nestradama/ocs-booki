@@ -2,6 +2,11 @@
 * {
     font-family: 'Raleway', sans-serif;
 }
+html, body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 
 :root {
     --main-color: #0065FC;
@@ -121,8 +126,42 @@ a {
     margin-bottom: 5px;
 }
 
+/*Header & Footer*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    margin-bottom: clamp(20px,2rem,35px);
+}
+#header_booki_logo{
+    height: 50%;
+    width: auto;
+}
 
+nav{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    align-self: start;
+    height: clamp(20px,2rem,35px);
+}
 
+#header_booki_logo{
+    height: 1.1rem;
+    width: auto;
+}
+
+nav a{
+    height: 100%;
+    align-content: end;
+}
+
+nav a:hover{
+    cursor: pointer;
+    color:#0065FC;
+    border-top: 4px #0065FC solid;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
