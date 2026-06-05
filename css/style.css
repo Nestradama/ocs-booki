@@ -273,6 +273,60 @@ nav a:hover{
     height: 24px;
 }
 
+/*Contenu "Hebergements"*/
+#hebergements_cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+#hebergements_cards .card-content *{
+    margin: 0;
+}
+
+#hebergements{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#hebergements > a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#hebergements_cards img{
+    height: 124px;
+    border-radius: 20px 20px 0 0;
+    border: 5px solid transparent;
+}
+
+#hebergements_cards .card{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    border-radius: 20px;
+    padding: 0 0 15px 0;
+    gap: 4px;
+    box-sizing: border-box;
+}
+
+#hebergements_cards .card-content{
+
+    padding: 0 15px 0 15px;
+}
+
+#hebergements_cards .card-content, #hebergements_cards .card-txt{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
