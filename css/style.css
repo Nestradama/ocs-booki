@@ -149,6 +149,19 @@ nav a:hover {
     font-weight: 700;
     font-size: 18px;
     color: black;
+    width: 100%;
+}
+
+#search_bar input:focus::placeholder{
+    color: lightgray;
+}
+
+#search_button{
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+textarea:focus, input:focus{
+    outline: none;
 }
 
 #search_bar button {
@@ -216,6 +229,8 @@ nav a:hover {
     justify-content: center;
     width: 24px;
     height: 24px;
+    min-width: 24px;
+    min-height: 24px;
 }
 
 /****** Hebergements And Populaires Container ***********/
@@ -530,12 +545,15 @@ footer > div {
     }
 
     #filter_group {
-        flex-wrap: wrap;
         display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
     }
 
     .filter {
         height: 50px;
+        flex: 1 1 95px;
+        min-width: fit-content;
     }
 
     .hebergements-and-populaires {
